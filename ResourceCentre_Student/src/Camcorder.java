@@ -1,7 +1,7 @@
 
 //test
-public class Camcorder extends Item{
-private int opticalZoom;
+public class Camcorder extends Item {
+	private int opticalZoom;
 
 	public Camcorder(String assetTag, String description, int opticalZoom) {
 		super(assetTag, description);
@@ -11,11 +11,13 @@ private int opticalZoom;
 	public int getOpticalZoom() {
 		return opticalZoom;
 	}
-	
-	public String toString(){
+
+	public String toString() {
 		String output = "";
 		// Write your codes here
+		output += "ASSET TAG: " + getAssetTag();
+		output += "DESCRIPTION: " + getDescription();
+		output += "OS: " + getOpticalZoom();
 		return output;
 	}
 }
-
